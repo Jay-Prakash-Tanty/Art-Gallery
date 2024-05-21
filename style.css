@@ -34,7 +34,7 @@
 }
 
 .firsttext{
-    font-size:clamp(45.64px,4vw,4vw);
+    font-size:clamp(58.64px,4vw,4vw);
     font-family:'Poetsen One';
     color: yellow;
     isolation: isolate;
@@ -46,7 +46,7 @@
 
 .secondtext{
 
-    font-size:clamp(34.32px,3vw,3vw);
+    font-size:clamp(46.32px,3vw,3vw);
     font-weight:100;
     font-family:'Pacifico';
     color: #f6ff00;
@@ -60,6 +60,15 @@
                                     @media only screen and (max-width:412px){
                                         .secondtext{
                                             font-size: 23px;
+                                        }
+
+                                    }
+                                    @media only screen and (max-width:1216px) and (min-width:903px){
+                                        .firsttext{
+                                            font-size: 6.5rem;
+                                        }
+                                        .secondtext{
+                                            font-size: 5.5rem;
                                         }
 
                                     }
