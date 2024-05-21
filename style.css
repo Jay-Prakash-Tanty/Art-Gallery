@@ -60,18 +60,18 @@
                                     
                                     @media only screen and (min-width:259px) {
                                         .firsttext{
-                                            font-size: 2rem;
+                                            font-size: 3.5rem;
                                         }
                                         .secondtext{
-                                            font-size: 1rem;
+                                            font-size: 2.5rem;
                                         }
                                     }
                                     @media only screen and (max-width:903px) and (min-width:599px){
                                         .firsttext{
-                                            font-size: 2rem;
+                                            font-size: 3.5rem;
                                         }
                                         .secondtext{
-                                            font-size: 1rem;
+                                            font-size: 2.5rem;
                                         }
 
                                     }
@@ -85,21 +85,21 @@
 
 
                                     }
-                                    @media only screen and (max-width:1216px) and (min-width:903px){
+                                    @media only screen and (min-width:903px){
                                         .firsttext{
-                                            font-size: 4.5rem;
+                                            font-size: 4rem;
                                         }
                                         .secondtext{
-                                            font-size: 3.5rem;
+                                            font-size: 3rem;
                                         }
 
                                     }
                                     @media only screen and (max-width:1544px) and (min-width:1216px ){
                                         .firsttext{
-                                            font-size: 4em;
+                                            font-size: 4.5em;
                                         }
                                         .secondtext{
-                                            font-size: 3rem;
+                                            font-size: 3.5rem;
                                             padding:50px;
                                         }
                                         
