@@ -1,0 +1,749 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+/* learned how to reduce background opacity from "css magic change background..."  */
+#id_of_a_sec_containing_first_two_text {
+    
+    min-height:650px;
+    position:relative;
+    background-color:black;
+
+}
+#id_of_a_sec_containing_first_two_text::before {
+    background-image: url('./all images used/bgi/bgi18.png');
+    background-position:center;
+    background-attachment: fixed;
+    background-size:cover;
+    content:'';
+    position:absolute;
+    inset: 0;
+    opacity:0.8;
+}
+.div_containing_first_and_second_text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    width:100%;
+    height:100%;
+    padding:10px;
+    
+}
+
+.firsttext{
+    font-size:8vw;
+    font-family:'Poetsen One';
+    color: yellow;
+    isolation: isolate;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.secondtext{
+
+    font-size:7vw;
+    font-weight:100;
+    font-family:'Pacifico';
+    color: #f6ff00;
+    text-align:center;
+    isolation: isolate;
+
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+                                    
+                                    @media only screen and (min-width:259px) {
+                                        .firsttext{
+                                            font-size: 2.5rem;
+                                        }
+                                        .secondtext{
+                                            font-size: 1.5rem;
+                                        }
+                                    }
+                                    @media only screen and (max-width:903px) and (min-width:599px){
+                                        .firsttext{
+                                            font-size: 3rem;
+                                        }
+                                        .secondtext{
+                                            font-size: 2rem;
+                                        }
+
+                                    }
+                                    @media only screen and (max-width:1077px) and (min-width:903px){
+                                        .firsttext{
+                                            font-size: 3.5rem;
+                                        }
+                                        .secondtext{
+                                            font-size: 2.5rem;
+                                        }
+
+
+                                    }
+                                    @media only screen and (max-width:1077px) and (min-width:903px){
+                                        .firsttext{
+                                            font-size: 4rem;
+                                        }
+                                        .secondtext{
+                                            font-size: 3rem;
+                                        }
+
+                                    }
+                                    @media only screen and (max-width:1544px) and (min-width:1216px ){
+                                        .firsttext{
+                                            font-size: 5rem;
+                                        }
+                                        .secondtext{
+                                            font-size: 4rem;
+                                            padding:50px;
+                                        }
+                                        
+                                    }
+
+
+/* profile_desc is div class name which contains artist's profile photo and it's description */
+/* profile_desc is a class common to all 4 artist */
+
+.parent_of_pofile_desc{
+
+    display:flex;
+
+}
+
+.profile_desc{
+
+    display:flex;
+    isolation: isolate;
+    padding:50px 70px;
+}
+
+
+                                      
+                                    @media only screen and (max-width:424px) {
+
+                                        .profile_desc{
+                                            padding: 50px 0px;
+                                        }
+                                    }
+                                   
+                                        
+
+
+
+.profile_desc > img{
+    border-radius:50%;
+}
+                                    @media only screen and (min-width:120px){
+                                        .profile_desc{
+                                            flex-direction: column;
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                        }
+                                        .profile_desc > img{
+                                            margin-bottom: 50px;
+                                            border: 3px solid white;
+                                        }
+
+                                    }
+                                    @media only screen and (max-width:1077px) and (min-width:903px){
+
+                                        .profile_desc > img{
+                                            width:160px;
+                                            height:160px;
+                                        }
+
+                                        
+                                    }
+                                    @media only screen and (max-width:1544px) and (min-width:1415px ){
+                                        .profile_desc > img{
+                                            width:125px;
+                                            height:125px;
+                                        }
+
+                                    }
+
+                                    
+
+/* artist_1,2,3,5 are the id name of the sections of artist description along with all their normal images */
+/* all_artist_background_sec is class name of same div which has artist_1,2,3,5 */
+
+.all_artist_background_sec{
+    min-height: 659px;
+    position: relative;
+    background-color:black;
+}
+
+.class_made_for_flex::before{
+    display:flex ;
+    flex-direction: column;
+    border-bottom: 5px solid white;
+    content:'';
+    isolation: isolate;
+    inset: 0;
+    opacity:1;
+
+}
+
+
+   /* here the concept used, is exactly same that of "id_of_a_sec_containing_first_two_text" whcih is used to reduce background opacity */
+
+
+.artist_2nd_class::before{
+    min-height: 659px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    content:'';
+    position:absolute;
+    inset: 0;
+    opacity:0.6;
+
+
+}
+#artist1::before{
+    background-image: url('./all images used/bgi/bgi8.jpg');
+
+}
+
+#artist2::before{
+    background-image: url('./all images used/bgi/bgi7.png');
+
+}
+
+#artist3::before{
+    background-image: url('./all images used/bgi/bgi16.png');
+
+}
+#artist5{
+    min-height: 659px;
+
+}
+#artist5::before{
+    background-image: url('./all images used/bgi/bgi20.jpg');
+    min-height: 659px;
+
+}
+
+
+
+
+/* artistdesc is a class name of paragaraph tag which contains it's description */
+.artistdesc{
+    font-size:30px;
+    font-family:'Lilita One';
+    color:cyan;
+    margin-left:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+                                    @media only screen and (max-width:760px) {
+                                        .artistdesc{
+                                            font-size:25px;
+                                            margin-left: 25px;
+                                            margin-right: 25px;
+                                            text-align: center;
+                                        }
+                                    }
+                                    @media only screen and (max-width:1544px) and (min-width:1216px ){
+                                        .artistdesc{
+                                            font-size:35px;
+
+                                        }
+
+                                    }
+                                    
+
+/* samphotos is a class div name containing all 8 images of 3 artists */
+/* samphotos is also common to all 3 artist's 8 images */
+.samphotos{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap:2rem;
+
+    isolation: isolate;
+
+    padding-bottom:50px;
+    padding-left:45px;
+    padding-right:45px;
+}
+
+
+
+
+                                    @media only screen and (max-width:1415px) and (min-width:1089px) {
+                                        .samphotos{
+                                            grid-template-columns: repeat(6,minmax(150px, 1fr));
+                                        }
+                                        .sam_div_1st_photo{
+                                            grid-area: 1/1/3/3;
+                                    
+                                        }
+                                        .sam_div_2nd_photo{ 
+                                            grid-area:1/3/3/5;
+                                    
+                                        }
+                                        .sam_div_3rd_photo{ 
+                                            grid-area:1/5/3/7;
+                                    
+                                        }
+                                        .sam_div_4th_photo{ 
+                                            grid-area:3/1/5/3; 
+                                    
+                                        }
+                                        .sam_div_5th_photo{ 
+                                            grid-area:3/3/5/5;
+                                    
+                                        }
+                                        .sam_div_6th_photo{ 
+                                            grid-area: 3/5/5/7;
+                                    
+                                        }
+                                        .sam_div_7th_photo{ 
+                                            grid-area:5/2/7/4;
+                                    
+                                        }
+                                        .sam_div_8th_photo{  
+                                            grid-area:5/4/7/6;
+                                    
+                                    
+                                        }
+                                    }
+
+                                    @media only screen and (max-width:903px) {
+                                        .samphotos{
+                                            grid-template-columns:1fr;
+                                            grid-gap:2rem 0rem;
+
+                                        }
+
+
+                                    }
+
+/* sam_ind_photos is a class name of img tag which contains the individual image*/
+/* sam_ind_photos is common to all 3 artist's 8 images */
+
+.sam_ind_photos{
+    max-width:100%;
+    height:auto;
+    vertical-align:middle;
+    transition: transform 0.3s ease ;
+}
+
+.samphotos img{
+    width: 100%;
+    height:100%;
+    object-fit:cover;
+    border-radius: 10px;
+    border: 3px solid white;
+
+}
+
+
+
+/* lightbox sections of first 3 artist */
+.sam_ind_photos_lightbox{
+
+    position:fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height:100vh;
+    background: rgba(0,0,0,0.8);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0,1);
+    transition: transform ease-in-out 500ms;
+    transform-origin: top;
+}
+
+.sam_ind_photos_lightbox:target{
+    transform: scale(1,1);
+}
+
+.sam_ind_photos_lightbox_content{
+
+    height:90%;
+    padding:2.5em;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.light_image_div{
+
+    height:90%;
+    display:flex;
+    justify-content: center;
+    /* man i will never forget this concept i was scratching my head for hours thinking why justify-content is'nt alligning the close button now after watching the video of slaying the dragon video is understood that when flex-direction is set to column the main asix becomes the cross axis and vice versa that's why */
+    align-items: flex-end;
+    flex-direction: column;
+
+}
+
+.light_image_div >img{
+    border: 4px solid white;
+    max-width:100%;
+    max-height:100%;
+    /* padding-left: 2em; */
+}
+
+/* close button section of all artist */
+
+.close,.class_black_close{
+
+    min-width:2em;
+    min-height:2em;
+    margin-bottom: 5px;
+    background: rgb(185, 179, 179);
+
+    border-radius:50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.close:after{
+    content:'X';
+    font-size:20px;
+
+
+    color:white;
+    font-weight:4000;
+}
+.class_black_close:after{
+    content:'X';
+    font-size:20px;
+    color:white;
+    font-weight:4000;
+
+}
+
+
+
+/* blackholed section */
+/* blackholed is a class div name containing all 7 blackholed images */
+
+.blackholed{
+
+
+    display:grid;
+    grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap:2rem;
+
+    isolation: isolate;
+
+    padding-bottom:45px;
+    padding-left:45px;
+    padding-right:45px;
+
+}
+                                    @media only screen and (max-width:1497px) and (min-width:1217px) {
+                                        
+                                        .blackholed{
+                                            grid-template-columns:repeat(4, minmax(250px, 1fr));
+                                        }
+                                        
+                                        .blackholed .blackholed_four{
+                                            grid-area: 4/4/6/5;
+                                        }
+                                        
+                                        .blackholed .blackholed_seven{
+                                            grid-area:4/1/6/2;
+                                        }
+                                    
+                                    }
+                                    @media only screen and (max-width:1217px) and (min-width:1078px) {
+                                        .blackholed{
+                                            
+                                            grid-template-columns:repeat(8, minmax(50px, 1fr));
+                                        }
+                                        .blackholed .blackholed_three{
+                                            grid-area: 1/1/3/6;
+
+                                        }
+                                        .blackholed .blackholed_four{
+                                            grid-area:1/6/3/9;
+                                            
+                                        }
+                                        .blackholed .blackholed_one{
+                                            grid-area:3/2/5/5;
+                                            
+                                        }
+                                        .blackholed .blackholed_two{
+                                            grid-area:3/5/5/8;
+                                            
+                                        }
+                                        .blackholed .blackholed_five{
+                                            grid-area:5/1/7/6;
+                                            
+                                        }
+                                        .blackholed .blackholed_seven{
+                                            grid-area:5/6/7/9;
+                                            
+                                        }
+                                        .blackholed .blackholed_six{
+                                            grid-area:7/3/9/7;
+                                            
+                                        }
+                                    }
+
+                                    @media only screen and (max-width:760px) {
+                                        .blackholed{
+                                            
+                                            grid-template-columns:1fr;
+                                            grid-gap:2rem 0rem;
+
+                                        }
+                                       
+
+                                        .blackholed .blackholed_two{
+                                            grid-area:3/1/5/2;
+
+                                        }
+                                    }
+
+                                    @media only screen and (max-width:2032px) and (min-width:1750px) {
+                                        .blackholed .blackholed_seven{
+                                            grid-area:1/6/3/7;
+
+                                        }
+
+                                    }
+
+                                    @media only screen and (max-width:1217px) and (min-width:1078px) {
+                                        .samphotos{
+                                            grid-template-rows: repeat(6,minmax(100px, 1fr));
+                                            grid-template-columns: repeat(6,minmax(100px, 1fr));
+                                        }
+                                        .sam_div_1st_photo{
+                                            grid-area: 1/1/3/4;
+                                    
+                                        }
+                                        .sam_div_2nd_photo{ 
+                                            grid-area:1/4/3/7;
+                                    
+                                        }
+                                        .sam_div_3rd_photo{ 
+                                            grid-area:3/1/5/4;
+                                    
+                                        }
+                                        .sam_div_4th_photo{ 
+                                            grid-area:3/4/5/7; 
+                                    
+                                        }
+                                        .sam_div_5th_photo{ 
+                                            grid-area:5/1/7/4;
+                                    
+                                        }
+                                        .sam_div_6th_photo{ 
+                                            grid-area: 5/4/7/7;
+                                    
+                                        }
+                                        .sam_div_7th_photo{ 
+                                            grid-area:7/1/9/4;
+                                    
+                                        }
+                                        .sam_div_8th_photo{  
+                                            grid-area:7/4/9/7;
+                                    
+                                        }
+                                                                             
+                                    }
+
+
+
+
+
+
+/* blackholed_ind_img is a class name of img tag which contains the individual image */
+.blackholed_ind_img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+    display:inline-block;
+    transition: transform 0.3s ease ;
+    
+}
+.blackholed img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+
+
+
+
+
+/* css for the 7 blackholed images to be mosaic */
+.blackholed_one{
+    grid-row:span 2;
+                                    
+}
+.blackholed_two{
+    grid-row:span 2; 
+
+}
+.blackholed_three  {
+    grid-row:span 2;
+    grid-column: span 2;
+
+}
+.blackholed_four{
+    grid-row:span 2;
+    grid-column: span 1;
+
+}
+.blackholed_five{
+    grid-row:span 2;
+    grid-column: span 2;
+
+}
+.blackholed_seven{
+    grid-row:span 2;
+}
+.blackholed_six{
+    grid-row:span 2;
+    grid-column: span 2;
+
+}
+
+
+/* text description for every image */
+.all_img_plus_desc_class{
+
+    position:relative;
+    transition: transform 0.3s ease ;
+    
+}
+.all_img_plus_desc_class:hover {
+    transform: scale(1.05);
+}
+.all_img_desc_div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    /* Here first there was bottom, left and right 0,0,0 which caused the text background to come over the image's white border so i did 3px that is the same image border thickness but there was some gap between text background and image border so i did bottom, left and right 2.5px  */
+    bottom:2.5px;
+    left:2.5px;
+    right:2.5px;
+    font-size: 1rem;
+    font-weight: 900;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity:0;
+    transition: 1s;
+    height:50%;
+    padding: 20px;
+    /* Here also in border radius first i did 10px for bottom 4 corners so as to match exactly with image's border radius but for some reason there was gap between text desc background and image border so i did 10 to 7.5*/
+    border-radius: 0px 0px 7.5px 7.5px / 0px 0px 7.5px 7.5px ;
+}
+
+.all_img_desc_div:hover{
+    opacity:1;
+}
+
+                                    @media only screen and (min-width:259px) and (max-width:358px){
+
+                                        .all_img_desc_div{
+                                            font-size: 0.7rem;
+                                        }
+                                    }
+                                    @media only screen and (max-width:903px) and (min-width:599px){
+                                        
+                                        .all_img_desc_div{
+                                            font-size: 2rem;
+                                        }
+
+                                    }
+                                    
+                                    @media only screen and (max-width:1077px) and (min-width:903px){
+                                        .all_img_desc_div{
+                                            font-size: 1.4rem;
+
+                                        }
+
+                                    }
+                                        
+
+
+
+/* text description for blackholed images */
+/* exactly same as previous one just the div class name is changed */
+/* blackholed_one,two,three,four,fivr,seven,six is equivalent to all_img_plus_desc_class */
+
+.blackholed_one{
+    position:relative;
+    transition: transform 0.3s ease ;
+}
+.blackholed_one:hover {
+    transform: scale(1.05);
+}
+
+
+.blackholed_two{
+    position:relative;
+    transition: transform 0.3s ease ;
+}
+.blackholed_two:hover {
+    transform: scale(1.05);
+}
+
+.blackholed_three{
+    position:relative;
+    transition: transform 0.3s ease ;
+}
+.blackholed_three:hover {
+    transform: scale(1.05);
+}
+
+
+.blackholed_four{
+    position:relative;
+    transition: transform 0.3s ease ;
+}
+.blackholed_four:hover {
+    transform: scale(1.05);
+}
+
+
+.blackholed_five{
+    position:relative;
+    transition: transform 0.3s ease ;
+}
+.blackholed_five:hover {
+    transform: scale(1.05);
+}
+
+
+.blackholed_seven{
+    position:relative;
+    transition: transform 0.3s ease ;
+}
+.blackholed_seven:hover {
+    transform: scale(1.05);
+}
+
+
+.blackholed_six{
+    position:relative;
+    transition: transform 0.3s ease ;
+}
+.blackholed_six:hover {
+    transform: scale(1.05);
+}
+
+
