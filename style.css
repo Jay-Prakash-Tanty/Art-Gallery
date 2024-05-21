@@ -34,7 +34,7 @@
 }
 
 .firsttext{
-    font-size:7vw;
+    font-size:clamp(45.64px,4vw,4vw);
     font-family:'Poetsen One';
     color: yellow;
     isolation: isolate;
@@ -46,7 +46,7 @@
 
 .secondtext{
 
-    font-size:6vw;
+    font-size:clamp(34.32px,3vw,3vw);
     font-weight:100;
     font-family:'Pacifico';
     color: #f6ff00;
@@ -57,53 +57,11 @@
     padding-bottom: 50px;
 
 }
-                                    
-                                    @media only screen and (max-width:599px) and (min-width:259px) {
-                                        .firsttext{
-                                            font-size: 2rem;
-                                        }
+                                    @media only screen and (max-width:412px){
                                         .secondtext{
-                                            font-size: 1rem;
-                                        }
-                                    }
-                                    @media only screen and (max-width:903px) and (min-width:599px){
-                                        .firsttext{
-                                            font-size: 2rem;
-                                        }
-                                        .secondtext{
-                                            font-size: 1rem;
+                                            font-size: 23px;
                                         }
 
-                                    }
-                                    @media only screen and (max-width:1077px) and (min-width:903px){
-                                        .firsttext{
-                                            font-size: 2.5rem;
-                                        }
-                                        .secondtext{
-                                            font-size: 1.5rem;
-                                        }
-
-
-                                    }
-                                    
-                                    @media only screen and (max-width:1216px) and (min-width:903px){
-                                        .firsttext{
-                                            font-size: 6.5rem;
-                                        }
-                                        .secondtext{
-                                            font-size: 5.5rem;
-                                        }
-
-                                    }
-                                    @media only screen and (max-width:1544px) and (min-width:1216px ){
-                                        .firsttext{
-                                            font-size: 7rem;
-                                        }
-                                        .secondtext{
-                                            font-size: 6rem;
-                                            padding:50px;
-                                        }
-                                        
                                     }
 
 
