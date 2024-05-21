@@ -34,7 +34,7 @@
 }
 
 .firsttext{
-    font-size:1vw;
+    font-size:7vw;
     font-family:'Poetsen One';
     color: yellow;
     isolation: isolate;
@@ -58,7 +58,7 @@
 
 }
                                     
-                                    @media only screen and (min-width:259px) {
+                                    @media only screen and (max-width:599px) and (min-width:259px) {
                                         .firsttext{
                                             font-size: 2rem;
                                         }
@@ -97,10 +97,10 @@
                                     }
                                     @media only screen and (max-width:1544px) and (min-width:1216px ){
                                         .firsttext{
-                                            font-size: 5rem;
+                                            font-size: 7rem;
                                         }
                                         .secondtext{
-                                            font-size: 4rem;
+                                            font-size: 6rem;
                                             padding:50px;
                                         }
                                         
