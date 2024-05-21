@@ -34,7 +34,7 @@
 }
 
 .firsttext{
-    font-size:8vw;
+    font-size:1vw;
     font-family:'Poetsen One';
     color: yellow;
     isolation: isolate;
@@ -46,7 +46,7 @@
 
 .secondtext{
 
-    font-size:7vw;
+    font-size:6vw;
     font-weight:100;
     font-family:'Pacifico';
     color: #f6ff00;
@@ -60,13 +60,32 @@
                                     
                                     @media only screen and (min-width:259px) {
                                         .firsttext{
+                                            font-size: 2rem;
+                                        }
+                                        .secondtext{
+                                            font-size: 1rem;
+                                        }
+                                    }
+                                    @media only screen and (max-width:903px) and (min-width:599px){
+                                        .firsttext{
+                                            font-size: 2rem;
+                                        }
+                                        .secondtext{
+                                            font-size: 1rem;
+                                        }
+
+                                    }
+                                    @media only screen and (max-width:1077px) and (min-width:903px){
+                                        .firsttext{
                                             font-size: 2.5rem;
                                         }
                                         .secondtext{
                                             font-size: 1.5rem;
                                         }
+
+
                                     }
-                                    @media only screen and (max-width:903px) and (min-width:599px){
+                                    @media only screen and (max-width:1077px) and (min-width:903px){
                                         .firsttext{
                                             font-size: 3rem;
                                         }
@@ -75,31 +94,12 @@
                                         }
 
                                     }
-                                    @media only screen and (max-width:1077px) and (min-width:903px){
+                                    @media only screen and (max-width:1544px) and (min-width:1216px ){
                                         .firsttext{
-                                            font-size: 3.5rem;
-                                        }
-                                        .secondtext{
-                                            font-size: 2.5rem;
-                                        }
-
-
-                                    }
-                                    @media only screen and (max-width:1077px) and (min-width:903px){
-                                        .firsttext{
-                                            font-size: 4rem;
+                                            font-size: 4em;
                                         }
                                         .secondtext{
                                             font-size: 3rem;
-                                        }
-
-                                    }
-                                    @media only screen and (max-width:1544px) and (min-width:1216px ){
-                                        .firsttext{
-                                            font-size: 5rem;
-                                        }
-                                        .secondtext{
-                                            font-size: 4rem;
                                             padding:50px;
                                         }
                                         
@@ -253,7 +253,7 @@
                                     }
                                     @media only screen and (max-width:1544px) and (min-width:1216px ){
                                         .artistdesc{
-                                            font-size:35px;
+                                            font-size:28px;
 
                                         }
 
